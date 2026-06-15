@@ -1,0 +1,17 @@
+export const mockExpenses = [
+  { id: 1, title: 'Rent - January', amount: 1200, paidBy: 'Alice Johnson', date: '2024-01-01', group: 'Roommates', splitType: 'Equal', category: 'housing' },
+  { id: 2, title: 'Electricity Bill', amount: 180, paidBy: 'Alice Johnson', date: '2024-01-05', group: 'Roommates', splitType: 'Equal', category: 'utilities' },
+  { id: 3, title: 'Gas Station', amount: 65, paidBy: 'Bob Smith', date: '2024-03-22', group: 'Road Trip', splitType: 'Equal', category: 'travel' },
+  { id: 4, title: 'Hotel Booking', amount: 420, paidBy: 'Carol Davis', date: '2024-03-20', group: 'Road Trip', splitType: 'Equal', category: 'travel' },
+  { id: 5, title: 'Weekly Groceries', amount: 245.5, paidBy: 'Bob Smith', date: '2024-01-08', group: 'Roommates', splitType: 'Equal', category: 'food' },
+  { id: 6, title: 'Internet & Cable', amount: 85, paidBy: 'Carol Davis', date: '2024-01-10', group: 'Roommates', splitType: 'Equal', category: 'utilities' },
+  { id: 7, title: 'Lunch Meeting', amount: 156, paidBy: 'David Lee', date: '2024-02-14', group: 'Office Lunch Club', splitType: 'Equal', category: 'food' },
+  { id: 8, title: 'Team Dinner', amount: 342, paidBy: 'Alice Johnson', date: '2024-02-28', group: 'Office Lunch Club', splitType: 'Equal', category: 'food' },
+  { id: 9, title: 'Water Bill', amount: 65, paidBy: 'Bob Smith', date: '2024-01-12', group: 'Roommates', splitType: 'Equal', category: 'utilities' },
+  { id: 10, title: 'Dining Out', amount: 120, paidBy: 'David Lee', date: '2024-01-15', group: 'Roommates', splitType: 'Equal', category: 'food' },
+  { id: 11, title: 'Coffee Supplies', amount: 45, paidBy: 'Eve Wilson', date: '2024-03-01', group: 'Office Lunch Club', splitType: 'Equal', category: 'food' },
+  { id: 12, title: 'Rent - February', amount: 1200, paidBy: 'Alice Johnson', date: '2024-02-01', group: 'Roommates', splitType: 'Equal', category: 'housing' },
+  { id: 13, title: 'Ferry Tickets', amount: 85, paidBy: 'Bob Smith', date: '2024-03-23', group: 'Road Trip', splitType: 'Equal', category: 'travel' },
+  { id: 14, title: 'Office Snacks', amount: 67.5, paidBy: 'Carol Davis', date: '2024-03-05', group: 'Office Lunch Club', splitType: 'Equal', category: 'food' },
+  { id: 15, title: 'Birthday Cake', amount: 55, paidBy: 'Alice Johnson', date: '2024-04-10', group: 'Birthday Gift', splitType: 'Equal', category: 'food' },
+]
