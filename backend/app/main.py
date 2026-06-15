@@ -14,15 +14,23 @@ from app.routes.settlement_suggestions import (router as settlement_suggestion_r
 from app.routes.dashboard import (router as dashboard_router)
 from app.routes.analytics import (router as analytics_router)
 app = FastAPI()
+import os
+origins_str = os.environ.get("ALLOWED_ORIGINS", "http://localhost:5173,http://localhost:5174,http://localhost:5175")
+origins = [o.strip() for o in origins_str.split(",") if o.strip()]
+
+# If "*" is in origins, credentials cannot be enabled in FastAPI
+allow_creds = True
+if "*" in origins:
+    allow_creds = False
+
 app.add_middleware(
     CORSMiddleware,
-    allow_origins=[
-        "http://localhost:5174"
-    ],
-    allow_credentials=True,
+    allow_origins=origins,
+    allow_credentials=allow_creds,
     allow_methods=["*"],
     allow_headers=["*"],
 )
+
 
 Base.metadata.create_all(bind=engine)
 
