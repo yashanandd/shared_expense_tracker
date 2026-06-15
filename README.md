@@ -1,5 +1,7 @@
 # SplitEase: Shared Expense Manager
 
+**Live Application**: [https://shared-expense-tracker-xi.vercel.app/](https://shared-expense-tracker-xi.vercel.app/)
+
 SplitEase is a modern, responsive web application for managing shared expenses within groups. It allows users to register, create groups, split expenses (equally, exactly, percentage-based, or weighted), compute optimal debt settlement paths, and import transactions from CSV files with detailed anomaly logging.
 
 ## Tech Stack

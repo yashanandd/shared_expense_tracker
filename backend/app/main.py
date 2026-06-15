@@ -15,7 +15,7 @@ from app.routes.dashboard import (router as dashboard_router)
 from app.routes.analytics import (router as analytics_router)
 app = FastAPI()
 import os
-origins_str = os.environ.get("ALLOWED_ORIGINS", "http://localhost:5173,http://localhost:5174,http://localhost:5175")
+origins_str = os.environ.get("ALLOWED_ORIGINS", "http://localhost:5173,http://localhost:5174,http://localhost:5175,https://shared-expense-tracker-xi.vercel.app")
 origins = [o.strip() for o in origins_str.split(",") if o.strip()]
 
 # If "*" is in origins, credentials cannot be enabled in FastAPI
